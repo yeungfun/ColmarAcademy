@@ -1,0 +1,289 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    color: #464646;
+}
+
+/* Header Section */
+
+header {
+    position: fixed;
+    background-color: white;
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    align-items: center;
+    z-index: 10 ;
+}
+
+header .logo {
+    margin-left: 24px;
+    height: 80%;
+}
+
+.name {
+    line-height: 32px;
+    flex: 1;
+    font-family: 'work sans', sans-serif;
+    font-size: 1.5rem;
+    color: #d3d3d3;
+}
+
+.name span {
+    font-weight: 500;
+    /* color: #464646; */
+}
+
+nav {
+    margin-right: 24px;
+}
+
+li {
+    display: inline-block;
+    margin: auto 8px;
+}
+
+/* MAIN */
+
+main {
+    position: relative;
+    top: 64px;
+}
+
+/* Banner Section*/
+
+.banner {
+    width: 100%;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.banner-info {
+    margin-left: 24px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.banner-header {
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.banner-word {
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+}
+
+.button {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding: 16px;
+    margin-bottom: 10%;
+    background-color: #464646;
+}
+
+/* Information Section */
+
+.information {
+    margin: 32px 0;
+    display: flex;
+}
+
+.sub-banner {
+    width: 60%;
+    margin: 0 24px;
+}
+
+.sub-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.sub-banner h1 {
+    font-size: 2.5rem;
+    margin: 32px 0;
+}
+
+.sub-banner .someguy {  
+    margin-top: 48px;
+}
+
+.event  {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.our {
+    display: flex;
+    padding: 16px;
+    border: solid 1px #d3d3d3 ;
+}
+
+.our:hover {
+    background-color: #d3d3d3;
+}
+
+.our img {
+    width: 35%;
+    height: auto;
+}
+
+.our .info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our h3 {
+    font-size: 1.5rem;
+}
+
+.our p {
+    margin: 8px 0;
+}
+
+.readmore {
+    color: #3c86ad;
+}
+
+/* Course Section */
+
+.startlearning {
+    background-color: #d3d3d3;
+    padding: 16px 64px;
+}
+
+.startlearning h1 {
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.courselist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    background-color: white;
+    width: 30%;
+    height: auto;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-info {
+    padding: 16px;
+}
+
+.course h3 {
+    font-size: 1.5rem;
+}
+
+.course h5 {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #787777;
+}
+
+.course p{
+    color: #787777;
+}
+
+/* Thesis Section */
+
+.thesis-exhibit {
+    margin: 32px 0;
+}
+
+.thesis-exhibit h1 {
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.thesis-content {
+    display: flex;
+}
+
+.video-content {
+    width: 60%;
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-content h3 {
+    font-size: 1.5rem;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.video-content p {
+    font-size: large;
+    line-height: 150%;
+}
+
+/* .thesis-subheader {
+    width: auto;
+} */
+
+.subheader {
+    display: flex;
+    align-items: center;
+}
+
+.subheader img {
+    width: 35%;
+    padding: 16px;
+}
+
+.subheader h4 {
+    margin: 16px 0;
+    font-size: 1.5rem;
+}
+
+.subheader:hover {
+    background-color: #d3d3d3;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 64px;
+    border-top: 1px solid #d3d3d3;
+    padding: 16px 24px 48px;
+    display: flex;
+}
+
+footer .copyright  {
+    flex: 1;
+    color: #3c86ad;
+}
+
+.copyright p, .privacy li{
+    color: #d3d3d3;
+}
+
