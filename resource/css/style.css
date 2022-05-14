@@ -7,9 +7,13 @@
     color: #464646;
 }
 
+.mobile {
+    display: none;
+}
+
 /* Header Section */
 
-header {
+.desktop {
     position: fixed;
     background-color: white;
     height: 64px;
@@ -20,7 +24,7 @@ header {
     z-index: 10 ;
 }
 
-header .logo {
+.desktop .logo {
     margin-left: 24px;
     height: 80%;
 }
@@ -47,6 +51,31 @@ li {
     margin: auto 8px;
 }
 
+/* Header Section Mobile */
+
+@media only screen and (max-width: 700px) {
+    .desktop {
+        display: none;
+    }
+
+    .header-mobile {
+        position: fixed;
+        background-color: white;
+        height: 64px;
+        width: 100%;
+        border-bottom: 1px solid #d3d3d3;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 10 ;
+    }
+
+    .header-mobile img {
+        height: 36px;
+        width: auto;
+    }
+}
+
 /* MAIN */
 
 main {
@@ -56,17 +85,21 @@ main {
 
 /* Banner Section*/
 
-.banner {
+
+@media only screen and (min-width: 701px) {
+   .banner {
     width: 100%;
     background-color: #d3d3d3;
     display: flex;
     align-items: center;
-}
+    }
 
-.banner img {
-    width: 60%;
-    margin: 32px 24px;
-}
+    .banner img {
+        width: 60%;
+        margin: 32px 24px;
+    } 
+} 
+
 
 .banner-info {
     margin-left: 24px;
@@ -97,6 +130,29 @@ main {
     padding: 16px;
     margin-bottom: 10%;
     background-color: #464646;
+}
+
+/* Banner Section Mobile */
+
+@media only screen and (max-width: 700px) {
+    .banner {
+        /* width: 100%; */
+        background-color: #d3d3d3;
+    }
+
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-info {
+        width: auto;
+    }
+
+    .banner-info .button{
+        background-color: #787777;
+    }
+
 }
 
 /* Information Section */
@@ -133,6 +189,7 @@ main {
 
 .our {
     display: flex;
+    align-items: center;
     padding: 16px;
     border: solid 1px #d3d3d3 ;
 }
@@ -143,7 +200,7 @@ main {
 
 .our img {
     width: 35%;
-    height: auto;
+    /* height: auto; */
 }
 
 .our .info {
@@ -163,6 +220,39 @@ main {
 
 .readmore {
     color: #3c86ad;
+}
+
+/* Information Section Mobile */
+
+@media only screen and (max-width: 700px) {
+    .our img,
+    .sub-banner {
+        display: none;
+    }
+
+    .information {
+        margin: 0;
+    }
+
+    .event {
+        width: 100%;
+    }
+
+    .event .mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .our {
+        flex-direction: column;
+        border: none;
+        align-items: flex-start;
+    }
+
+    .our .info {
+        margin-top: 16px;
+    }
 }
 
 /* Course Section */
@@ -211,6 +301,46 @@ main {
     color: #787777;
 }
 
+/* Course Section Mobile */
+
+@media only screen and (max-width: 700px) {
+    
+    .startlearning {
+        background-color: white;
+        padding: 0;
+    }
+
+    .startlearning h1 {
+        margin-top: 32px;
+    }
+
+    .course {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .courselist {
+        margin: 16px;
+        height: auto;
+    }
+
+    .course img,
+    .course h5,
+    .course p {
+        display: none;
+    }
+
+    .course-info {
+        background-color: #d3d3d3;
+        padding: 16px 16px 24px;
+    }
+
+    .course-info:hover {
+        background-color: white;
+        border: 1px solid #d3d3d3;
+    }
+}
+
 /* Thesis Section */
 
 .thesis-exhibit {
@@ -245,10 +375,6 @@ main {
     line-height: 150%;
 }
 
-/* .thesis-subheader {
-    width: auto;
-} */
-
 .subheader {
     display: flex;
     align-items: center;
@@ -266,6 +392,29 @@ main {
 
 .subheader:hover {
     background-color: #d3d3d3;
+}
+
+/* Thesis Exhibits Section Mobile */
+
+@media only screen and (max-width: 700px) {
+    .thesis-subheader {
+        display: none;
+    }
+
+    .thesis-content {
+        width: 100%;
+    }
+
+    .video-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .thesis-content h3,
+    .thesis-content p {
+        display: none;
+    }
 }
 
 /* Footer */
@@ -287,3 +436,20 @@ footer .copyright  {
     color: #d3d3d3;
 }
 
+/* Footer Secetion Mobile */
+
+@media only screen and (max-width: 700px) {
+
+    footer {
+        /* width: 100%; */
+        padding: 16px;
+    }
+
+    .copyright p{
+        color: #464646;
+    }
+
+    .privacy {
+        display: none;
+    }
+}
